@@ -1,0 +1,15 @@
+<div>
+    Welcome {{name}}. Welcome to our awesome app.
+</div>
+
+<div>
+    you can manage your todo click <a routerLink="/todos">here</a>
+</div>
+
+<div>
+    Welcome to our customize message <button class="btn btn-success" (click)="getWelcomeMessageParameter()">Get Welcome message</button>
+</div>
+
+<div *ngIf="customizeMessage">
+    customize message {{customizeMessage}}
+</div>
